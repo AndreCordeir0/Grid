@@ -1,48 +1,48 @@
-body{
+body {
     margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #F6F9FF;
-  display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F6F9FF;
 }
-.title{
-    background:#333 url(https://images.alphacoders.com/110/thumb-1920-1108683.jpg);
-   position:absolute;
+
+.title {
+    background: #333 url(https://images.alphacoders.com/110/thumb-1920-1108683.jpg);
     height: 500px;
     width: 100%;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0;
-     top: 0;
+    top: 0;
     filter: grayscale(0.60);
     background-attachment: fixed;
-    
-  
 }
+
 .content {
-position: absolute;
-top: 30%;
-text-align: center;
-left: 14%;
-color: black;
-font-size: 30px;
-font-family: Impact, fantasy;
-letter-spacing: 10px;
-filter: grayscale(0);
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Impact, fantasy;
+    letter-spacing: 10px;
+    filter: grayscale(0);
 }
-#showcase{
+
+#showcase {
     min-height: 450px;
     color: #fff;
     text-align: center;
 }
 
-.content a{
+.content a {
     bottom: unset;
-    color:white;
+    color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-   letter-spacing: 0px;
+    letter-spacing: 0px;
 }
-.gradient{
-   
+
+.gradient {
     background-color: #333;
     display: inline-block;
     border: 1px solid #666;
@@ -53,29 +53,30 @@ filter: grayscale(0);
     text-align: center;
     border-radius: 2px;
 }
-.gradient:hover{
+
+.gradient:hover {
     background-color: white;
     color: black;
 }
-.content2{
+
+.content2 {
     color: black;
-    position: absolute;
-    top: 500px;
     text-align: center;
     margin: 0;
-    background-color: #eaeaea;;
+    background-color: #eaeaea;
     width: 100%;
     height: auto;
-    
+
 }
-.content2 h2{
+
+.content2 h2 {
     font-family: Impact, fantasy;
     font-size: 25px;
     letter-spacing: 4px;
 }
-.grid{
-    display:flex;
-   
+
+.grid {
+    display: flex;
     grid-column-gap: 30px;
     text-align: center;
     align-items: center;
@@ -86,69 +87,70 @@ filter: grayscale(0);
     padding: 30px;
     line-height: 1.6;
 }
+
 .section {
     display: flex;
-    padding:50px;
-  margin-left: 90px;
-  margin-top: 880px;
-  margin-bottom: 20px;
-  text-align: center;
-  background: white;
-  color: black;
-  flex-direction: column;
-font-family: Candara;
-box-shadow: 0px 10px 40px rgba(167, 146, 165, 0.801);
-position: relative;
-object-fit: cover;
+    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: white;
+    color: black;
+    flex-direction: column;
+    font-family: Candara;
+    box-shadow: 0px 10px 40px rgba(167, 146, 165, 0.801);
+    position: relative;
+    object-fit: cover;
 }
-.section:hover{
+
+.section:hover {
     transform: scale(1.020);
-    
 }
 
 
-.section:first-child{
+.section:first-child {
     padding-left: 40px;
 }
 
-  .section button{
-      border-radius: 32px;
-      padding: 0.5rem 1rem;
-     text-transform: uppercase;
-      font-size: 80%;
-      border: 0;
-      cursor: pointer;
-      font-weight: 500;
-      text-align: center;
-      color: white;
-      
-    }
-    .komi button{
-        background: linear-gradient(to right,#9F66FF,#DFCBFF);
-    }
-    .mushoku button{
-        background: linear-gradient(to right, #3E8AFF, #BBDEFF);
-    }
-    .takt button{
-        background: linear-gradient(to right, #FE5F8F, #FFC7D9);
-    }
-    button:hover{
-transform: scale(1.1);
-    }
+.section button {
+    border-radius: 32px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-size: 80%;
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
 
-.main{
+.komi button {
+    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+
+.mushoku button {
+    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+
+.takt button {
+    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.main {
     display: flex;
     padding: 0px;
     box-sizing: border-box;
-   
-    
- 
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.anime{
-   display: grid;
-   grid-column-gap: 0px;
-   grid-template-columns: repeat(2,671px);
-   margin-left: 0px;
+
+.anime {
+    display: flex;
+    margin-left: 0px;
     color: black;
     font-family: Didot;
     font-size: 25px;
@@ -157,76 +159,53 @@ transform: scale(1.1);
 
 
 
-.mus{
-background: #2c2c2c;
-color: white;
-
+.support {
+    background: #2c2c2c;
+    color: white;
+    width: 100%;
 }
-
-.ta{
+.support p , .about p{
+    text-align: center;
+}
+.support, .about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about {
     background: #2690d4;
     color: white;
-  
+    width: 100%;
 }
-footer{
+
+footer {
+    display: flex;
     height: 90px;
-    display: grid;
-    grid-template-columns: repeat(2,600px);
-    grid-gap: 50px;
     background: black;
     text-align: center;
     align-items: center;
     font-size: 20px;
-
+    justify-content: center;
 }
-footer a{
+
+footer a {
     cursor: pointer;
     color: #2690d4;
 }
-.ta p{
+
+.about p {
     color: #8e07fc;
     animation: randclanim 2s linear infinite;
 }
 
 @keyframes randclanim {
-    
-    0%{
-    -webkit-filter: hue-rotate(
-0deg
-);
-}
-    100% {
-    -webkit-filter: hue-rotate(
-1turn
-);
-}
-}
 
-@media  only screen and (max-width: 600px){
-    .main{
-        display: grid;
+    0% {
+        -webkit-filter: hue-rotate(0deg);
     }
-.section{
-    margin-top: 1200px;
-   margin-left: 0;
- padding: 3px;
- display: grid;
- flex-direction: column;
- max-width: 480px;
-}
-.section:first-child{
-    padding-left: 0;
-}
-.mushoku {
-    margin-top: 100px;
-}
-.takt{
-    margin-top: 100px;
-}
-footer{
-    max-width: px;
-    display: grid;
-}  
-}
 
-
+    100% {
+        -webkit-filter: hue-rotate(1turn);
+    }
+}
